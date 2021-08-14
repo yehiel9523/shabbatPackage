@@ -14,8 +14,8 @@ export function shabbatChack(req, res, next) {
     const date = () => new Hebcal.HDate(new Date());
     const now = () => new Date();
     date().setCity('Jerusalem');
-    if (date().candleLighting()) {
-        if (date().candleLighting().getTime() < now().getTime()) {
+    if (test || date().candleLighting()) {
+        if (test || date().candleLighting().getTime() < now().getTime()) {
             // app.use(express.static('/'))
             res.set('Content-Type', 'text/html');
             res.send(`<!DOCTYPE html>
