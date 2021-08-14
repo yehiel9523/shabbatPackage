@@ -1,0 +1,16 @@
+{
+    "name": "shabbatpackage",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.mjs",
+    "scripts": {
+        "start": "nodemon server.mjs"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "hebcal": "^2.3.2",
+        "nodemon": "^2.0.12"
+    }
+}
