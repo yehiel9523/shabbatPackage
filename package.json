@@ -6,8 +6,19 @@
     "scripts": {
         "start": "nodemon server.mjs"
     },
-    "author": "",
+    "author": "Yehiel9523",
     "license": "ISC",
+    "keywords": [
+        "Shabbat",
+        "Hebrew calender",
+        "hebrew",
+        "calendar",
+        "jewish",
+        "holidays",
+        "chagim",
+        "zmanim",
+        "candle lighting"
+    ],
     "dependencies": {
         "express": "^4.17.1",
         "hebcal": "^2.3.2"
