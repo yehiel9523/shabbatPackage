@@ -10,7 +10,10 @@
     "license": "ISC",
     "dependencies": {
         "express": "^4.17.1",
-        "hebcal": "^2.3.2",
+        "hebcal": "^2.3.2"
+    },
+    "devDependencies": {
         "nodemon": "^2.0.12"
+
     }
 }
