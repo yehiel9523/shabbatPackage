@@ -35,16 +35,16 @@ app.get()....
 
 ## Options
 
-To see how your web going to look like on Shabbat you can use the first optional argumant in the fubction by true like that
+To see how your web going to look like on Shabbat you can use the first optional argument  in the function by true like that
 
 ```
 shabbatChacke(true)
 ```
 
-Also in the the default times of Shabbat are by "Jerusalem' time , but you can change it by the second argument like that
+Also in the the default times of Shabbat are by 'Jerusalem' time , but you can change it by the second argument like that
 
 ```
 shabbatChacke(false,'New York')
 ```
 
-In the future we hope to update the package that would chack automatically the location of the user , and use his times...
+In the future we hope to update the package that would check  automatically the location of the user , and use his local times...
