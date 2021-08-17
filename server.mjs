@@ -10,7 +10,6 @@ export function isShabbat(date = new Date(), city = 'Jerusalem') {
     const now = () => new Date(date);
     if (HebrewDate().candleLighting()) {
         if (HebrewDate().candleLighting().getTime() < now().getTime()) {
-            console.log('in')
             return true
         } else if (HebrewDate().next().candleLighting())
             return true
@@ -23,7 +22,6 @@ export function isShabbat(date = new Date(), city = 'Jerusalem') {
         } else return false
     } else {
         return false
-
     }
 }
 
@@ -55,7 +53,6 @@ export function useShabbatCheck(date = new Date(), city = 'Jerusalem') {
 // for testing the function
 
 const app = express();
-console.log(isShabbat())
 app.use(useShabbatCheck());
 app.get('/', (req, res) => {
     res.set('Content-Type', 'text/html')
