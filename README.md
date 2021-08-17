@@ -10,11 +10,13 @@ By useing that package you can feel good about your website that it's not going 
 from the 'Hadlakat Nerot' time until the 'Havdala' time , the default times are the Jerusalem time , but you can change it see in the options
 
 You can use the default option by useing express middleware app.use() and put inside the useShabbatCheck , and that use the our html Shabbat page.
-for example ```
+for example 
+```
 app.use(useShabbatCheck())
 ```
 or you can use the isShabbat function that return boolean value if it's shabbat now ,
-for example ```
+for example 
+```
 app.use(useShabbatCheck())
 ```
 and use the app.use by yourself and give your custom html Shabbat page , or you can use it without express and do your own functionality.
