@@ -57,32 +57,22 @@ The first argument is if you want to check if the package work , you put in a Da
 app.use(useShabbatCheck(new Date(2021,7,21,0,0,0)))  // => it`s Shabbat so the web going to get our Shabbat page
 ```
 
-Also if you use the isShabbat function it's the same for example
+Also if you use the isShabbat function it's the same ,for example
 ```
 
 isShabbat(new Date(2021,7,21,0,0,0)) // => true
 ```
 
-The second argument is for change the local Shabbat time from the default that is 'Jerusalem'
+The second argument is for change the local Shabbat time from the default that is 'Jerusalem',
 For example
 
 ```
-app.use(useShabbatCheck(new Date(),'New York')) ```
+app.use(useShabbatCheck(new Date(),'New York')) 
+```
 Or
 ```
 
-isShabbat(new Date()) ```
-
-<!-- To see how your web going to look like on Shabbat you can use the first optional argument in the function by true like that
-
+isShabbat(new Date()) 
 ```
-shabbatCheck(true)
-```
-
-Also in the the default times of Shabbat are by 'Jerusalem' time , but you can change it by the second argument like that
-
-```
-shabbatCheck(false,'New York')
-``` -->
 
 In the future we hope to update the package that would check automatically the location of the user , and use his local times...
