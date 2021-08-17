@@ -1,7 +1,7 @@
 import express from 'express';
 import Hebcal from 'hebcal';
 
-export function isShabat(date = new Date(), city = 'Jerusalem') {
+export function isShabbat(date = new Date(), city = 'Jerusalem') {
     const HebrewDate = () => {
         const hebcalDate = new Hebcal.HDate(new Date(date))
         hebcalDate.setCity(city);
@@ -29,7 +29,7 @@ export function isShabat(date = new Date(), city = 'Jerusalem') {
 
 export function useShabbatCheck(date = new Date(), city = 'Jerusalem') {
     return (req, res, next) => {
-        if (isShabat(date, city)) {
+        if (isShabbat(date, city)) {
             res.set('Content-Type', 'text/html');
             res.send(`<!DOCTYPE html>
                 <html lang="en">
@@ -55,6 +55,7 @@ export function useShabbatCheck(date = new Date(), city = 'Jerusalem') {
 // for testing the function
 
 const app = express();
+console.log(isShabbat())
 app.use(useShabbatCheck());
 app.get('/', (req, res) => {
     res.set('Content-Type', 'text/html')
