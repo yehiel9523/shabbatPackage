@@ -13,7 +13,7 @@ from the 'Hadlakat Nerot' time until the 'Havdala' time , the deafult times are 
 npm i shabbatpackage
 ```
 
-Then
+Then in the server page 
 
 ```
 import express from 'express';
