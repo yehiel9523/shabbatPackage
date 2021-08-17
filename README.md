@@ -5,7 +5,7 @@ This is an npm package to close web on jews Shabbat and holidays
 ## Description
 
 By useing that package you can feel good about your website that it's not going to work on Shabbat and Yom Tov
-from the 'Hadlakat Nerot' time until the 'Havdala' time , the deafult times are the Jerualem time , but you can change it see in the options
+from the 'Hadlakat Nerot' time until the 'Havdala' time , the default times are the Jerualem time , but you can change it see in the options
 
 ## Installation
 
