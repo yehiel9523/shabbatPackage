@@ -17,14 +17,14 @@ Then in the server page
 
 ```
 import express from 'express';
-import { shabbatChack } from 'shabbatpackage'
+import { shabbatCheck } from 'shabbatpackage'
 const app = express();
 ```
 
 And then
 
 ```
-app.use(shabbatChack())
+app.use(shabbatCheck())
 ```
 
 And then your entire code like thet
@@ -38,13 +38,13 @@ app.get()....
 To see how your web going to look like on Shabbat you can use the first optional argument  in the function by true like that
 
 ```
-shabbatChacke(true)
+shabbatCheck(true)
 ```
 
 Also in the the default times of Shabbat are by 'Jerusalem' time , but you can change it by the second argument like that
 
 ```
-shabbatChacke(false,'New York')
+shabbatCheck(false,'New York')
 ```
 
 In the future we hope to update the package that would check  automatically the location of the user , and use his local times...
