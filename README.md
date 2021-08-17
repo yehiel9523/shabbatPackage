@@ -17,7 +17,7 @@ app.use(useShabbatCheck())
 or you can use the isShabbat function that return boolean value if it's shabbat now ,
 for example 
 ```
-app.use(useShabbatCheck())
+isShabbat() // => boolean value
 ```
 and use the app.use by yourself and give your custom html Shabbat page , or you can use it without express and do your own functionality.
 
