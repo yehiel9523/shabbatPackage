@@ -53,21 +53,23 @@ app.get()....
 We have 2 optional arguments in our fuctions
 The first argument is if you want to check if the package work , you put in a Date js object and now you can see how the web going to work and look like in this day for exemple
 
-````
-app.use(useShabbatCheck(new Date(2021,7,21,0,0,0))) ``` // => it`s Shabbat so the web going to get our Shabbat page
+```
+app.use(useShabbatCheck(new Date(2021,7,21,0,0,0)))  // => it`s Shabbat so the web going to get our Shabbat page
+```
 
 Also if you use the isShabbat function it's the same for example
-````
+```
 
-isShabbat(new Date(2021,7,21,0,0,0)) ``` // => true
+isShabbat(new Date(2021,7,21,0,0,0)) // => true
+```
 
 The second argument is for change the local Shabbat time from the default that is 'Jerusalem'
 For example
 
-````
+```
 app.use(useShabbatCheck(new Date(),'New York')) ```
 Or
-````
+```
 
 isShabbat(new Date()) ```
 
