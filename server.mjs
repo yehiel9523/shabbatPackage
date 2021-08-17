@@ -52,11 +52,11 @@ export function useShabbatCheck(date = new Date(), city = 'Jerusalem') {
 
 // for testing the function
 
-const app = express();
-app.use(useShabbatCheck());
-app.get('/', (req, res) => {
-    res.set('Content-Type', 'text/html')
-    res.send('<h1> test</h1>')
-})
+// const app = express();
+// app.use(useShabbatCheck());
+// app.get('/', (req, res) => {
+//     res.set('Content-Type', 'text/html')
+//     res.send('<h1> test</h1>')
+// })
 
-app.listen(8070);
+// app.listen(8070);
