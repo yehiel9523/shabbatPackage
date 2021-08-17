@@ -72,7 +72,7 @@ app.use(useShabbatCheck(new Date(),'New York'))
 Or
 ```
 
-isShabbat(new Date()) 
+isShabbat(new Date(),'New York') 
 ```
 
 In the future we hope to update the package that would check automatically the location of the user , and use his local times...
