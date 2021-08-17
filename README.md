@@ -41,7 +41,7 @@ To see how your web going to look like on Shabbat you can use the first optional
 shabbatChacke(true)
 ```
 
-Also in the the times of Shabbat are by "Jerusalem' time , but you can change it by the second argument like that
+Also in the the default times of Shabbat are by "Jerusalem' time , but you can change it by the second argument like that
 
 ```
 shabbatChacke(false,'New York')
