@@ -2,9 +2,11 @@
     "name": "shabbatpackage",
     "version": "3.0.3",
     "description": "",
-    "main": "server.mjs",
+    "main": "index.js",
+    "type": "module",
     "scripts": {
-        "start": "nodemon test.mjs"
+        "dev": "set NODE_ENV=development && nodemon tests/server.mjs",
+        "start": "nodem tests/server.mjs"
     },
     "author": "Yehiel9523",
     "license": "ISC",
