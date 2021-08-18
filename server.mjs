@@ -50,6 +50,10 @@ export function useShabbatCheck(date = new Date(), city = 'Jerusalem') {
     }
 }
 
+export function shabbatDate(){
+    return new Date(2021,7,21,0,0,0)
+}
+
 // for testing the function
 
 const app = express();
