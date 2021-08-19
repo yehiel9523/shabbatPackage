@@ -8,5 +8,5 @@ app.get('/', (req, res) => {
     res.set('Content-Type', 'text/html')
     res.send('<h1> test</h1>')
 })
-
-app.listen(8070);
+const port = process.env.PORT || 8070;
+app.listen(port);
