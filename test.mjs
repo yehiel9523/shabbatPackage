@@ -1,5 +1,5 @@
 import express from 'express';
-import { isShabbat, useShabbatCheck, getUserLocation, location } from './server.mjs';
+import { isShabbat, useShabbatCheck, getUserLocation } from './server.mjs';
 
 const app = express();
 app.use(getUserLocation)

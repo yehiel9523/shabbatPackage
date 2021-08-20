@@ -4,9 +4,10 @@ import expressip from 'express-ip'
 const app = express();
 app.use(expressip().getIpInfoMiddleware);
 
-export let location;
+let location;
 export const getUserLocation = (req, res, next) => {
-    location = req.ipInfo.ll;
+
+    if (location) location = req.ipInfo.ll;
     console.log(location);
     next()
 }
