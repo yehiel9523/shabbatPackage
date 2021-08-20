@@ -7,8 +7,10 @@ app.use(expressip().getIpInfoMiddleware);
 let location;
 export const getUserLocation = (req, res, next) => {
     location = req.ipInfo.ll;
+    console.log(location);
     next()
 }
+
 export function isShabbat(date = new Date(), city = 'Jerusalem') {
     const hebrewDate = () => {
         const hebcalDate = new Hebcal.HDate(new Date(date))
