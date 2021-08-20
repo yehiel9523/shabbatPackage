@@ -1,8 +1,11 @@
 import express from 'express';
-import { isShabbat, useShabbatCheck, getUserLocation, useExpressip } from './server.mjs';
+import expressip from 'express-ip';
+
+import { isShabbat, useShabbatCheck, getUserLocation } from './server.mjs';
 
 const app = express();
-useExpressip()
+app.use(expressip().getIpInfoMiddleware);
+
 app.use(getUserLocation)
 app.use(useShabbatCheck());
 console.log(isShabbat())
