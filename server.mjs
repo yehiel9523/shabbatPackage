@@ -7,7 +7,7 @@ app.use(expressip().getIpInfoMiddleware);
 let location;
 export const getUserLocation = (req, res, next) => {
 
-    if (location) location = req.ipInfo.ll;
+    if (req.ipInfo) location = req.ipInfo.ll;
     console.log(location);
     next()
 }
