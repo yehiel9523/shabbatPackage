@@ -2,7 +2,7 @@ import Hebcal from 'hebcal';
 import express from 'express';
 import expressip from 'express-ip'
 const app = express();
-app.use(expressip().getIpInfoMiddleware);
+export const useExpressip = () => app.use(expressip().getIpInfoMiddleware);
 
 let location;
 export const getUserLocation = (req, res, next) => {
