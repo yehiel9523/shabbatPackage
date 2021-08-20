@@ -20,10 +20,11 @@
         "candle lighting"
     ],
     "dependencies": {
+        "express": "^4.17.1",
+        "express-ip": "^1.0.4",
         "hebcal": "^2.3.2"
     },
     "devDependencies": {
-        "express": "^4.17.1",
         "nodemon": "^2.0.12"
     }
 }

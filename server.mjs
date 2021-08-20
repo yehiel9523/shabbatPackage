@@ -1,22 +1,34 @@
 import Hebcal from 'hebcal';
+import express from 'express';
+import expressip from 'express-ip'
+const app = express();
+app.use(expressip().getIpInfoMiddleware);
 
+let location;
+export const getUserLocation = (req, res, next) => {
+    location = req.ipInfo.ll;
+    next()
+}
 export function isShabbat(date = new Date(), city = 'Jerusalem') {
-    const HebrewDate = () => {
+    const hebrewDate = () => {
         const hebcalDate = new Hebcal.HDate(new Date(date))
-        hebcalDate.setCity(city);
+        if (location)
+            hebcalDate.setLocation(location)
+        else
+            hebcalDate.setCity(city);
         return hebcalDate
     };
-    const now = () => new Date(date);
-    if (HebrewDate().candleLighting()) {
-        if (HebrewDate().candleLighting().getTime() < now().getTime()) {
+    const now = () => new Date(new Date(date));
+    if (hebrewDate().candleLighting()) {
+        if (hebrewDate().candleLighting().getTime() < now().getTime()) {
             return true
-        } else if (HebrewDate().next().candleLighting())
+        } else if (hebrewDate().next().candleLighting())
             return true
         else
             return false
     } else
-    if (HebrewDate().havdalah()) {
-        if (HebrewDate().havdalah().getTime() > now().getTime()) {
+    if (hebrewDate().havdalah()) {
+        if (hebrewDate().havdalah().getTime() > now().getTime()) {
             return true
         } else return false
     } else {
