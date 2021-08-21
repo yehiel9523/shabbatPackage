@@ -1,0 +1,1 @@
+export const shbbatDateObj = new Date(2021, 7, 21, 0, 0, 0)
