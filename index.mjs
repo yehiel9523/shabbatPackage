@@ -1,3 +1,3 @@
 export {isShabbat} from "./package/isShabbat.mjs";
-export {useShabbatCheck} from "./package/useShabbatCheck.mjs";
+export {shabbatBlockerMiddleware} from "./package/shabbatBlockerMiddleware.mjs";
 export {shbbatDateObj} from "./package/shbbatDateObj.mjs";

@@ -6,9 +6,13 @@ import {isShabbat} from "./isShabbat.mjs";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-export function useShabbatCheck(date = new Date()) {
+const JERUSALEM_LOCATION = [31.771959, 35.217018];
+
+export function shabbatBlockerMiddleware(date = new Date(), defLocation = JERUSALEM_LOCATION) {
     return (req, res, next) => {
-        if (isShabbat(date, getUserLocation(req))) {
+        let location = getUserLocation(req) || defLocation;
+
+        if (isShabbat(date, location)) {
             res.set('Content-Type', 'text/html');
             res.sendFile(join(__dirname, '../static/shabbatPage.html'))
         } else {

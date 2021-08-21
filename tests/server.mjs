@@ -1,11 +1,11 @@
 import express from 'express';
-import { useShabbatCheck, shbbatDateObj } from '../index.mjs';
+import { shabbatBlockerMiddleware, shbbatDateObj } from '../index.mjs';
 
 const app = express();
 const PORT = process.env.PORT || 8070;
 
-app.use('/', useShabbatCheck());
-app.use('/shabbat', useShabbatCheck(shbbatDateObj));
+app.use('/', shabbatBlockerMiddleware(shbbatDateObj));
+app.use('/shabbat', shabbatBlockerMiddleware(shbbatDateObj));
 
 app.get('/', (req, res) => {
     res.set('Content-Type', 'text/html')
