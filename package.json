@@ -2,9 +2,9 @@
     "name": "shabbatpackage",
     "version": "3.1.7",
     "description": "",
-    "main": "server.mjs",
+    "main": "index.mjs",
     "scripts": {
-        "start": "nodemon test.mjs"
+        "start": "nodemon tests/server.mjs"
     },
     "author": "Yehiel9523",
     "license": "ISC",
@@ -21,7 +21,7 @@
     ],
     "dependencies": {
         "express": "^4.17.1",
-        "express-ip": "^1.0.4",
+        "geoip-lite": "^1.4.2",
         "hebcal": "^2.3.2"
     },
     "devDependencies": {
