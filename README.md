@@ -7,6 +7,11 @@ Simple package to control your web on jews Shabbat and Holidays.
 If you'r Shomer Shabbat and you don't want your web to open on Shabbat, by useing that package you can simply control your website that it's not going to work on Shabbat and Yom Tov
 from the 'Hadlakat Nerot' time until the 'Havdala' time, the default times are the Jerusalem time, but you can change it see in the options.
 
+From the version 3.1.7 by using the middleware the location of the user is taken automatically (just notice that this user client location  taken from the user IP so it works only in real server and not in localhost server...)
+.<br>
+you shoud still use the second argument for set the default location (as an array like [latitude, longitude]) for case that we not got the location from the user.<br>
+By default the location was 'Jerusalem'.<br>
+
 You can use the middleware option by useing express app.use() and put inside the shabbatBlockerMiddleware, by that you are using our html Shabbat page,
 for example:
 
@@ -21,10 +26,6 @@ for example:
 isShabbat() // => boolean value
 ```
 
-From the version 3.1.7 by using the middleware the location of the user is taken automatically.<br>
-you shoud still use the second argument for set the default location (as an array like [latitude, longitude]) for case that we not got the location from the user.<br>
-By default the location was 'Jerusalem'.<br>
-(also see that this package work only in real server and not in localhost server...)
 
 
 ## Installation
