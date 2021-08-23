@@ -4,7 +4,7 @@ Simple package to control your web on jews Shabbat and Holidays.
 
 ## Description
 
-If you'r Shomer Shabbat and you don't want your web to open on Shabbat by useing that package you can simply control your website that it's not going to work on Shabbat and Yom Tov
+If you'r Shomer Shabbat and you don't want your web to open on Shabbat, by useing that package you can simply control your website that it's not going to work on Shabbat and Yom Tov
 from the 'Hadlakat Nerot' time until the 'Havdala' time, the default times are the Jerusalem time, but you can change it see in the options.
 
 You can use the middleware option by useing express app.use() and put inside the shabbatBlockerMiddleware, by that you are using our html Shabbat page,
