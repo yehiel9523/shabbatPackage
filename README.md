@@ -1,10 +1,10 @@
 # ShabbatPackage
 
-This is an npm package to close web on jews Shabbat and holidays.
+Simple package to control your web on jews Shabbat and Holidays.
 
 ## Description
 
-By useing that package you can feel good about your website that it's not going to work on Shabbat and Yom Tov
+If you'r Shomer Shabbat and you don't want your web to open on Shabbat by useing that package you can simply control your website that it's not going to work on Shabbat and Yom Tov
 from the 'Hadlakat Nerot' time until the 'Havdala' time, the default times are the Jerusalem time, but you can change it see in the options.
 
 You can use the middleware option by useing express app.use() and put inside the shabbatBlockerMiddleware, by that you are using our html Shabbat page,
@@ -61,7 +61,7 @@ IMPORTANT: the <user_location> should by as a list of latitude and longitude (li
 ## Options
 
 We also have 2 optional arguments in our shabbatBlockerMiddleware and isShabbat fuctions:
-- The first argument is if you want to check if the package work, you cat put 'shbbatDateObj' as an argument like this:
+- The first argument is if you want to check if the package work, you can put 'shbbatDateObj' as an argument like this:
 ```
 import { isShabbat, shbbatDateObj } from 'shabbatpackage';
 
