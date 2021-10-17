@@ -8,6 +8,10 @@
     },
     "author": "Yehiel9523",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yehiel9523/shabbatPackage.git"
+    },
     "keywords": [
         "Shabbat",
         "Hebrew calender",
